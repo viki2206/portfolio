@@ -1,0 +1,143 @@
+/* Contact Page CSS */
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff; /* Default white background for the body */
+    color: #333;
+    font-family: 'Arial', sans-serif; /* Ensure consistent font */
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #007bff, #00aaff); /* Blue gradient */
+    color: #fff;
+    padding: 1rem 0; /* Added top and bottom padding for height */
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex; /* Align items in a row */
+    justify-content: flex-end; /* Move items to the right */
+    margin-top: 10px; /* Space between header title and nav */
+}
+
+header nav ul li {
+    margin: 0 20px; /* Increase space between menu items */
+}
+
+/* Contact Page Section */
+.contact-section {
+    background: url('call.png') no-repeat center center/cover; /* Background image for contact page */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; /* Center the content */
+    align-items: center; /* Align items vertically */
+    padding: 40px; /* Add padding for spacing */
+}
+
+/* Contact Container with Glassmorphism Effect */
+.contact-container {
+    background: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Light border */
+    border-radius: 15px; /* Rounded corners */
+    padding: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow */
+    max-width: 600px; /* Limit the width for better alignment */
+    width: 100%;
+    text-align: center;
+}
+
+/* Contact Info Section */
+.contact-info {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #007bff; /* Link color */
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Form Animations */
+.contact-form {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #1ea664; /* Border color on focus */
+    outline: none;
+}
+
+/* Buttons (Fill In Animation) */
+.animated-button {
+    position: relative;
+    color: #1ea664; /* Button text color */
+    background: #e7ffcb; /* Button background color */
+    padding: 8px 20px; /* Adjusted padding for more oval shape */
+    border: 2px solid #1ea664; /* Button border */
+    text-align: center;
+    text-transform: uppercase; /* Uppercase text */
+    overflow: hidden; 
+    transition: .3s; /* Smooth transition for hover effects */
+    z-index: 1;
+    font-size: 14px; /* Font size */
+    border-radius: 50px; /* Oval shape with a high border-radius */
+}
+
+.animated-button:hover {
+    cursor: pointer; /* Pointer cursor on hover */
+    color: #070707; /* Change text color on hover */
+}
+
+.animated-button:before {
+    content: '';
+    position: absolute;
+    background: #1ea664; /* Fill color */
+    width: 0;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: width 0.4s ease; /* Smooth transition for fill */
+}
+
+.animated-button:hover:before {
+    width: 100%; /* Expand the fill color on hover */
+}

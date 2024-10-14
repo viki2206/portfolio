@@ -1,0 +1,52 @@
+/* Projects Page Section */
+.projects-section {
+    background: url('98.png') no-repeat center center/cover; /* Set background image for projects page */
+    min-height: 100vh; /* Increase minimum height of the viewport */
+    display: flex;
+    justify-content: center; /* Center the content */
+    align-items: flex-start; /* Align items to the top */
+    text-align: left; /* Align text to the left */
+    color: #333;
+    padding: 40px; /* Add padding for spacing */
+}
+
+/* Projects Container */
+.projects-container {
+    background: rgba(255, 255, 255, 0.1); /* Light transparent background */
+    backdrop-filter: blur(10px); /* Apply blur effect for glassmorphism */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Semi-transparent white border */
+    border-radius: 15px; /* Rounded corners */
+    padding: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 800px; /* Limit the width for better alignment */
+    animation: fadeIn 1s ease; /* Add fade-in animation */
+}
+
+.projects-container h2 {
+    color: #fff; /* Change heading color to white for contrast */
+    margin-bottom: 15px; /* Spacing below the heading */
+}
+
+/* Project Item */
+.project-item {
+    background: rgba(255, 255, 255, 0.2); /* Light transparent background for project items */
+    backdrop-filter: blur(8px); /* Apply blur effect for glassmorphism */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Semi-transparent border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px; /* Padding inside the box */
+    margin-bottom: 15px; /* Space between project items */
+    transition: transform 0.3s; /* Smooth scaling effect */
+}
+
+.project-item:hover {
+    transform: scale(1.03); /* Slightly enlarge on hover */
+}
+
+.project-item h3 {
+    margin-bottom: 10px; /* Spacing below the project title */
+}
+
+/* View Details Button in Projects Page */
+.projects-section .animated-button {
+    margin-top: 20px; /* Space between the content and the button */
+}

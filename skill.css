@@ -1,0 +1,39 @@
+/* Skills Section */
+.section {
+    padding: 40px; /* Space around the section */
+}
+
+/* Skills Container */
+.skills-container {
+    display: flex;
+    flex-direction: column; /* Stack the boxes vertically */
+    align-items: center; /* Center the boxes */
+}
+
+/* Glassmorphism Effect */
+.glass-box {
+    background: rgba(255, 255, 255, 0.2); /* Light transparent background */
+    backdrop-filter: blur(10px); /* Apply blur effect for glassmorphism */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Semi-transparent white border */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px;
+    margin: 20px 0; /* Space between boxes */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 80%; /* Adjust width as needed */
+    max-width: 600px; /* Max width for better alignment */
+    animation: fadeIn 1s ease; /* Add fade-in animation */
+}
+
+.glass-box h3 {
+    color: #fff; /* Change heading color to white for contrast */
+    margin-bottom: 10px; /* Spacing below the heading */
+}
+
+/* List Styles */
+.technical-skills-list, 
+.programming-skills-list, 
+.software-tools-list, 
+.additional-skills-list {
+    list-style-type: none; /* Remove bullet points */
+    padding-left: 0; /* Remove left padding */
+}

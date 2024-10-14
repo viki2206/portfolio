@@ -1,0 +1,124 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif; /* Set a sans-serif font */
+}
+
+body {
+    background-color: #ffffff; /* Default white background for the body */
+    color: #333;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #007bff, #00aaff); /* Blue gradient */
+    color: #fff;
+    padding: 1rem 0; /* Added top and bottom padding for height */
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex; /* Align items in a row */
+    justify-content: flex-end; /* Move items to the right */
+    margin-top: 10px; /* Space between header title and nav */
+}
+
+header nav ul li {
+    margin: 0 20px; /* Increase space between menu items */
+}
+
+/* Buttons (Global styles) */
+.animated-button {
+    position: relative;
+    color: #1ea664; /* Button text color */
+    background: #e7ffcb; /* Button background color */
+    padding: 8px 20px; /* Adjusted padding for more oval shape */
+    border: 2px solid #1ea664; /* Button border */
+    text-align: center;
+    text-transform: uppercase; /* Uppercase text */
+    overflow: hidden; 
+    transition: .3s; /* Smooth transition for hover effects */
+    z-index: 1;
+    font-size: 14px; /* Font size */
+    border-radius: 50px; /* Oval shape with a high border-radius */
+}
+
+.animated-button:hover {
+    cursor: pointer; /* Pointer cursor on hover */
+    color: #e7ffcb; /* Change text color on hover */
+}
+
+/* Fill In Animation */
+.button-fill-in:hover {
+    box-shadow: inset 0 0 0 2em #1ea664; /* Creates the fill-in effect */
+}
+
+/* Smart Car Page Section */
+.smart-car-section {
+    min-height: 100vh; /* Full height of the viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the content vertically */
+    align-items: center; /* Center the content horizontally */
+    padding: 40px; /* Add padding for spacing */
+    background-color: rgba(240, 240, 240, 0.9); /* Light background for better visibility */
+}
+
+/* Smart Car Content */
+.smart-car-content {
+    max-width: 600px; /* Limit the width for better alignment */
+    text-align: center; /* Center the text */
+    margin-bottom: 20px; /* Space below the content */
+}
+
+.smart-car-content h2 {
+    color: #007bff; /* Change heading color to blue */
+    margin-bottom: 15px; /* Spacing below the heading */
+}
+
+.smart-car-content p {
+    color: #555; /* Slightly lighter color for text */
+    margin-bottom: 15px; /* Spacing below the paragraph */
+}
+
+/* Car Image Styling */
+.smart-car-image img {
+    width: 200px; /* Smaller size for the car image */
+    height: auto;
+    display: block;
+    margin: 0 auto 20px; /* Center the image */
+    transition: transform 0.5s ease; /* Smooth transition for scaling */
+}
+
+/* Click to Enlarge Image */
+.smart-car-image img:active {
+    transform: scale(1.5); /* Enlarge the image on click */
+}
+
+/* Move Back to Projects Button Down */
+#backToProjects {
+    margin-top: 50px; /* Moves the "Back to Projects" button lower on the page */
+    display: inline-block;
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Slide in effect */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Move to original position */
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center; /* Center the footer text */
+    padding: 1rem 0; /* Add padding to the footer */
+    background: #f1f1f1;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Car - Vignesh Portfolio</title>
+    <link rel="stylesheet" href="smart-car.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Smart Car</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="animated-button button-fill-in">Home</a></li>
+                    <li><a href="projects.html" class="animated-button button-fill-in">Projects</a></li>
+                    <li><a href="skills.html" class="animated-button button-fill-in">Skills</a></li>
+                    <li><a href="contact.html" class="animated-button button-fill-in">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="smart-car-section">
+        <div class="smart-car-content">
+            <div class="smart-car-image">
+                <img src="car.jpg" alt="Smart Car Image" id="carImage" onclick="openFullscreen();">
+            </div>
+
+            <h2>Smart Car</h2>
+            <p>The Smart Car is an innovative autonomous vehicle designed for efficient, real-time navigation and obstacle detection. Powered by an ESP32-CAM module, it utilizes advanced computer vision techniques to identify objects and avoid obstacles autonomously.</p>
+            <p>Next Update: Smart Home Rover</p>
+            <p>The upcoming iteration, the Smart Home Rover, will integrate smart home automation features.</p>
+
+            <p><a href="projects.html" class="animated-button button-fill-in" id="backToProjects">Back to Projects</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Vignesh R | Portfolio</p>
+        </div>
+    </footer>
+
+    <!-- Fullscreen Image Modal -->
+    <div id="fullscreenModal" class="modal" onclick="closeFullscreen();">
+        <span class="close" onclick="closeFullscreen();">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+    <script>
+        function openFullscreen() {
+            const modal = document.getElementById("fullscreenModal");
+            const img = document.getElementById("carImage");
+            const modalImg = document.getElementById("img01");
+            modal.style.display = "block";
+            modalImg.src = img.src;
+        }
+
+        function closeFullscreen() {
+            const modal = document.getElementById("fullscreenModal");
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+</html>
